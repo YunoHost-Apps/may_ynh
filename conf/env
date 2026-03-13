@@ -4,7 +4,7 @@
 SECRET_KEY="__SECRET_KEY__"
 
 # Database URL (default: SQLite in data folder)
-DATABASE_URL=sqlite://__DATA_DIR__/may.db
+DATABASE_URL=sqlite:///__DATA_DIR__/may.db
 
 # Upload folder for attachments
 UPLOAD_FOLDER=__DATA_DIR__/uploads
