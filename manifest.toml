@@ -33,10 +33,10 @@ ram.runtime = "50M"
 	[install.domain]
 	type = "domain"
 
-	[install.admin_username]
+	[install.admin]
 	type = "user"
 
-	[install.admin_password]
+	[install.password]
 	type = "password"
 
 	[install.init_main_permission]
