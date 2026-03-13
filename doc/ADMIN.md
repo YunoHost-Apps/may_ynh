@@ -1,4 +1,4 @@
 ### Administration
 
-The user admin is `__ADMIN_USERNAME__`.
-His password is `__ADMIN_PASSWORD__`.
+The user admin is `__ADMIN__`.
+His password is `__PASSWORD__`.
