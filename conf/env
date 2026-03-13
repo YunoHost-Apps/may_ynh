@@ -1,7 +1,7 @@
 # May Configuration
 
 # Secret key for session encryption (generate a random string for production)
-SECRET_KEY=__SECRET__
+SECRET_KEY=__SECRET_KEY__
 
 # Database URL (default: SQLite in data folder)
 DATABASE_URL=sqlite://__DATA_DIR__/may.db
