@@ -1,0 +1,57 @@
+#!/bin/bash
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression "Setting up source files..."
+
+ynh_setup_source --dest_dir="$install_dir"
+
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression "Adding app's configuration file..."
+
+ynh_config_add --template="env" --destination="$install_dir/.env"
+
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+ynh_script_progression "Adding system configurations related to $app..."
+
+ynh_config_add_nginx
+
+ynh_config_add_systemd
+
+yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+
+ynh_config_add_logrotate
+
+#=================================================
+# INSTALL APP
+#=================================================
+ynh_script_progression "Installing $app..."
+
+myynh_install
+
+#=================================================
+# SET FILE OWNERSHIP / PERMISSIONS
+#=================================================
+
+myynh_set_permissions
+
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
+ynh_script_progression "Starting app's systemd service..."
+
+ynh_systemctl --service="$app" --action="start"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_script_progression "Installation of $app completed"

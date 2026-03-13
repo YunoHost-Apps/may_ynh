@@ -1,0 +1,68 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "may"
+name = "May"
+
+description.en = "Web-based vehicle maintenance and fuel mileage tracker"
+description.fr = ""
+
+version = "0.15.0~ynh1"
+
+maintainers = ["ewilly"]
+
+[upstream]
+license = "MIT"
+
+code = "https://github.com/dannymcc/may"
+
+[integration]
+yunohost = ">= 12.1.39"
+helpers_version = "2.1"
+architectures = ["amd64", "arm64"]
+multi_instance = false
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+
+	[install.domain]
+	type = "domain"
+
+	[install.path]
+	type = "path"
+	default = "/may"
+
+	[install.init_main_permission]
+	type = "group"
+	default = "visitors"
+
+[resources]
+
+	[resources.sources]
+
+		[resources.sources.main]
+		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.15.0.tar.gz"
+		sha256 = "cf8db49f4ba98f6a9206ca4c44a715c6013be39525cea18b5be77623bfae97b4"
+
+		autoupdate.strategy = "latest_github_release"
+
+	[resources.system_user]
+
+	[resources.install_dir]
+
+	[resources.data_dir]
+
+	[resources.permissions]
+	main.url = "/"
+	api.url = "/api"
+	api.show_tile = false
+	api.allowed = "visitors"
+	api.auth_header = false
+
+	[resources.apt]
+	packages = "python3 python3-venv"
