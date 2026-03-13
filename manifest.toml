@@ -64,5 +64,8 @@ ram.runtime = "50M"
 	api.allowed = "visitors"
 	api.auth_header = false
 
+	[resources.ports]
+	main.default = 5050
+
 	[resources.apt]
 	packages = "python3 python3-venv"
