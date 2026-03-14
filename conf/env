@@ -1,0 +1,18 @@
+# May Configuration
+
+# Secret key for session encryption (generate a random string for production)
+SECRET_KEY="__SECRET_KEY__"
+
+# Database URL (default: SQLite in data folder)
+DATABASE_URL=sqlite:///__DATA_DIR__/may.db
+
+# Upload folder for attachments
+UPLOAD_FOLDER=__DATA_DIR__/uploads
+
+# Admin account
+ADMIN_USERNAME="__ADMIN__"
+ADMIN_PASSWORD="__PASSWORD__"
+ADMIN_EMAIL="__EMAIL__"
+
+# Debug mode
+FLASK_DEBUG=false
