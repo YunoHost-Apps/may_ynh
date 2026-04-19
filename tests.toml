@@ -4,6 +4,7 @@ test_format = 1.0
 
 [default]
 
-    # ------------
-    # Tests to run
-    # ------------
+	# ------------
+	# Tests to run
+	# ------------
+	test_upgrade_from.4b30199142243ea319bb6fa248baa62a744574b5.name = "Upgrade from 0.15.0~ynh1"
