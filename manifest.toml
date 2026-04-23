@@ -8,7 +8,7 @@ name = "May"
 description.en = "Web-based vehicle maintenance and fuel mileage tracker"
 description.fr = ""
 
-version = "0.18.1~ynh1"
+version = "0.20.0~ynh1"
 
 maintainers = ["ewilly"]
 
@@ -48,8 +48,8 @@ ram.runtime = "50M"
 	[resources.sources]
 
 		[resources.sources.main]
-		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.18.1.tar.gz"
-		sha256 = "918eb03025f2145cf00aa5ec419677c85ba06046fe5e45b70fc2c99a20352fd9"
+		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.20.0.tar.gz"
+		sha256 = "50a5054b054365a92331133494a44134f4e4be7b7f4efaf92bdafb1e2bde982a"
 
 		autoupdate.strategy = "latest_github_release"
 
