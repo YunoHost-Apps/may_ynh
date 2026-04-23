@@ -14,5 +14,7 @@ ADMIN_USERNAME="__ADMIN__"
 ADMIN_PASSWORD="__PASSWORD__"
 ADMIN_EMAIL="__EMAIL__"
 
-# Debug mode
-FLASK_DEBUG=false
+# Flask
+FLASK_APP=run:app
+FLASK_ENV=production
+FLASK_DEBUG=true
