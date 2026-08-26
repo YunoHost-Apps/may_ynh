@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   May, packaged for YunoHost
 </h1>
 
-Web-based vehicle maintenance and fuel mileage tracker
+Vehicle maintenance and fuel mileage tracker
 
 [![Version: 0.41.1~ynh1](https://img.shields.io/badge/Version-0.41.1~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/may/)
 
