@@ -4,26 +4,26 @@ packaging_format = 2
 
 id = "may"
 name = "May"
+description.en = "Vehicle maintenance and fuel mileage tracker"
+description.fr = "Suivi de l'entretien des véhicules et de la consommation de carburant"
 
-description.en = "Web-based vehicle maintenance and fuel mileage tracker"
-description.fr = ""
-
-version = "0.41.1~ynh1"
+version = "0.41.3~ynh1"
 
 maintainers = ["ewilly"]
 
 [upstream]
 license = "MIT"
-
 code = "https://github.com/dannymcc/may"
 
 [integration]
-yunohost = ">= 12.1.39"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = ["amd64", "arm64"]
 multi_instance = false
+
 ldap = false
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -48,8 +48,8 @@ ram.runtime = "50M"
 	[resources.sources]
 
 		[resources.sources.main]
-		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.41.1.tar.gz"
-		sha256 = "d91677661ed2dcec573498871e471c93e2c797527b7675f2c81818b7e677437a"
+		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.41.3.tar.gz"
+		sha256 = "c23326dd165d164248ada5020e0cf496bb6aeba601f433180fb1ed70908b3a81"
 
 		autoupdate.strategy = "latest_github_release"
 
