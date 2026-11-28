@@ -7,7 +7,7 @@ name = "May"
 description.en = "Vehicle maintenance and fuel mileage tracker"
 description.fr = "Suivi de l'entretien des véhicules et de la consommation de carburant"
 
-version = "0.45.0~ynh1"
+version = "0.46.2~ynh1"
 
 maintainers = ["ewilly"]
 
@@ -48,8 +48,8 @@ ram.runtime = "50M"
 	[resources.sources]
 
 		[resources.sources.main]
-		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.45.0.tar.gz"
-		sha256 = "484e5a44c5bf2491a43c3c3d0363c553d36e4204abacdfa9814015441aeeae5d"
+		url = "https://github.com/dannymcc/may/archive/refs/tags/v0.46.2.tar.gz"
+		sha256 = "80af02b02f460bc7dd37f6fa5746b5daba2df3aeb087cdcd286dff85e81434ce"
 
 		autoupdate.strategy = "latest_github_release"
 
